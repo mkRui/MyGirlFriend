@@ -2,10 +2,16 @@ import { Injectable } from "@nestjs/common";
 
 import { MailerService } from '@nestjs-modules/mailer';
 
+import moment from 'moment'
+
 @Injectable()
 export class MailService {
     constructor(private readonly mailerService: MailerService) {}
 
+
+    /**
+     * 
+     */
     sendEmail () {
         // 876481853@qq.com
         this.mailerService.sendMail({
@@ -15,7 +21,8 @@ export class MailService {
             // html: '<b>welcome !</b>',
             template: 'mail',
             context: {  // Data to be sent to template engine.
-                "code": 'cf1a3f828287',
+                "date": moment().format('YYYY-MM-DD'),
+                "StartTime": '2021-02-11',
                 "username": 'john doe',
             },
         })

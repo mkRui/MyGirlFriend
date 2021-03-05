@@ -12,6 +12,10 @@ async function bootstrap() {
 
   app.useStaticAssets(join(__dirname,'../src','Public'));
 
+  app.setBaseViewsDir(join(__dirname,'../src','Template'));
+
+  app.setViewEngine('ejs')
+
   // !默认在根目录下
   //   app.useStaticAssets('public');
 

@@ -22,7 +22,6 @@ import { ApiService } from "./../Api/api.service";
               sercure: true,
               auth: {
                 user: '1102163949@qq.com',
-                pass: 'yvncxterjlgfjcaf'
               }
             },
             defaults:  {

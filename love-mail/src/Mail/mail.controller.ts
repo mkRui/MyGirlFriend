@@ -14,8 +14,13 @@ export class MailController {
         return 'ok'
     }
 
-    // @Get('/weather')
-    // getWeather () {
-    //     console.log(this.apiservice.getWeather())
-    // }
+    @Get('/weather')
+    async getWeather () {
+        const Weather = await this.apiservice.getWeather()
+        const SayLove = await this.apiservice.getSayLove()
+        const DayLucky = await this.apiservice.getDayLucky()
+        const getBing = await this.apiservice.getBing()
+
+        console.log(getBing)
+    }
 }
