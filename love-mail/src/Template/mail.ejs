@@ -5,20 +5,83 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Love</title>
-        <style>
-            body {
-                background-color: black;
-            }
-            p {
-                background: blue;
-                font-size: 30px;
-            }
-        </style>
     </head>
-    <body>
-        <p>我宣你1111</p>
-        <p>Welcome, your activation code is <%= locals.code %></p>
-        <img src="https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2903795984,3730028115&fm=26&gp=0.jpg" alt="">
+    <body >
+        <div class="parent-body" style="
+            padding: 20px 20px 30px;
+            background-color: #ebecee;
+        ">
+            <div class="body" style="margin: 0 auto;">
+                <header>
+                    <h1 class="title" style="
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                        margin: 0;
+                    ">
+                        <img width="26" height="26" style="margin-right: 10px;" class="icon" src="https://png.pngtree.com/element_our/20190603/ourlarge/pngtree-red-three-dimensional-love-illustration-image_1460206.jpg" alt="">
+                        <span style="
+                            text-shadow: 4px 4px 0 #555, 4px 4px 0 white;
+                            color: white;
+                            margin: 0;
+                            font-size: 26px;
+                        ">
+                            OHH MY LOVE
+                        </span>
+                    </h1>
+                    <p class="tips" style="
+                        color: #666;
+                        margin: 5px 0 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                    ">
+                        在一起的 
+                        <b style="
+                            font-size: 16px;
+                            color: pink;
+                        "><%= locals.time %></b>
+                        天，感谢我们相遇的每一天
+                    </p>
+                </header>
+                
+                <div class="love-img" style="
+                    width: 100%;
+                    box-sizing: border-box;
+                    border: 10px solid #fff;
+                    background-color: #fff;
+                ">
+                    <img style="width: 100%;" src="<%= locals.url %>" alt="">
+                    <p class="love-s" style="
+                        margin: 0;
+                        text-align: right;
+                        font-size: 12px;
+                        color: #666;
+                    "><i>我爱你，就像春天的花香沁人心脾，我的大宝贝儿～～</i></p>
+                </div>
+
+                <!-- content -->
+                <div class="content" style="
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    background-color: #fff;
+                    padding: 30px 20px;
+                ">
+                    <h4 class="say" style="
+                        margin: 0;
+                        font-size: 18px;
+                        color: #333;
+                    ">每一天 我都想对你说</h4>
+                    <p class="say-content" style="
+                        font-size: 15px;
+                        color: #333;
+                        margin-top: 15px;
+                    "><%= locals.content %></p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
 	
