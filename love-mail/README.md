@@ -17,16 +17,16 @@
 ## 使用方法
   在文件根目录添加`email.config.ts`
   ### 添加如下配置
-  ```json
-  {
-      form: '发件@qq.com', // 发件人
-      to: '收件@qq.com', // 收件人
-      title: 'title', // 标题
-      subTitle: 'Subtitle', // 副标题
-      key: 'password', // 邮箱密钥
+  ```typescript
+    {
+        form: '发件@qq.com', // 发件人
+        to: '收件@qq.com', // 收件人
+        title: 'title', // 标题
+        subTitle: 'Subtitle', // 副标题
+        key: 'password', // 邮箱密钥
 
-      // 相爱的日期
-      date: 'date',
-  }
+        // 相爱的日期
+        date: 'date',
+    }
   ```
   
