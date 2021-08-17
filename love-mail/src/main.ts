@@ -4,17 +4,15 @@ import { join } from 'path';
 import { AppModule } from './ServiceApp/app.module';
 
 async function bootstrap() {
-  const app = await NestFactory.create<NestExpressApplication>(
-    AppModule,
-  );
+  const app = await NestFactory.create<NestExpressApplication>(AppModule);
 
-  console.log()
+  console.log();
 
-  app.useStaticAssets(join(__dirname,'../src','Public'));
+  app.useStaticAssets(join(__dirname, '../src', 'Public'));
 
-  app.setBaseViewsDir(join(__dirname,'../src','Template'));
+  app.setBaseViewsDir(join(__dirname, '../src', 'Template'));
 
-  app.setViewEngine('ejs')
+  app.setViewEngine('ejs');
 
   // !默认在根目录下
   //   app.useStaticAssets('public');
