@@ -8,9 +8,9 @@ import { MailController } from './mail.controller';
 
 import { MailService } from './mail.service';
 
-import { ApiModule } from '../Api/api.module';
+import { ApiModule } from './../Api/api.module';
 
-import Config from 'love-mai../Api/api.service
+import Config from 'love-mail/email.config';
 @Module({
   imports: [
     MailerModule.forRoot({

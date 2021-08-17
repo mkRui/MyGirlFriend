@@ -2,7 +2,7 @@ import { Controller, Get } from '@nestjs/common';
 
 import { MailService } from './mail.service';
 
-import { ApiService } from '../Api/api.service';
+import { ApiService } from './../Api/api.service';
 
 import * as fs from 'fs';
 

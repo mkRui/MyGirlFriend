@@ -6,7 +6,7 @@ import * as fs from 'fs';
 
 import { MailService } from '../Mail/mail.service';
 
-import { ApiService } from '../Api/api.service';
+import { ApiService } from './../Api/api.service';
 
 @Injectable()
 export class TasksService {
